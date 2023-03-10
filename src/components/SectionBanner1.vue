@@ -49,13 +49,18 @@
           <p>전,월세 보증금 담보로도 대출가능!</p>
         </div>
         <div class="content">
-          <img src="../static/images/slide_01.png" />
+          <img :src="image1" />
           <p>대출을 디자인하다! 디자인론</p>
         </div>
       </swiper-slide>
     </swiper>
     <div class="icons">
       <div>
+        <img :src="icon1" />
+        <p class="small">복잡한 절차없는</p>
+        <p class="large">일반신용대출</p>
+      </div>
+      <!-- <div>
         <img
           src="../static/images/디자인론_이미지-아이콘_09.png"
         />
@@ -82,14 +87,7 @@
         />
         <p class="small">복잡한 절차없는</p>
         <p class="large">일반신용대출</p>
-      </div>
-      <div>
-        <img
-          src="../static/images/디자인론_이미지-아이콘_09.png"
-        />
-        <p class="small">복잡한 절차없는</p>
-        <p class="large">일반신용대출</p>
-      </div>
+      </div> -->
       <!-- <div>
         <img
           src="../static/images/디자인론_이미지-아이콘_09.png"
@@ -102,6 +100,7 @@
 </template>
 <script>
 import Image1 from "../static/images/slide_01.png";
+import Icon1 from "../static/images/디자인론_이미지-아이콘_09.png";
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
@@ -124,7 +123,7 @@ export default {
     };
   },
   data: () => {
-    return { image1: Image1 };
+    return { image1: Image1, icon1: Icon1 };
   },
 };
 </script>
