@@ -16,7 +16,7 @@
           <p>파산면책자, 신용회복자도 대출 가능!</p>
         </div>
         <div class="content">
-          <img src="../static/images/slide_01.png" />
+          <img :src="image1" />
           <p>대출을 디자인하다! 디자인론</p>
         </div>
       </swiper-slide>
@@ -27,7 +27,7 @@
           <p>직장인, 사업자, 주부라면 복잡한 절차없이!</p>
         </div>
         <div class="content">
-          <img src="../static/images/slide_01.png" />
+          <img :src="image1" />
           <p>대출을 디자인하다! 디자인론</p>
         </div>
       </swiper-slide>
@@ -38,10 +38,10 @@
           <p>타던차 그대로 시세 100% 대출 가능!</p>
         </div>
         <div class="content">
-          <img src="../static/images/slide_01.png" />
+          <img :src="image1" />
           <p>대출을 디자인하다! 디자인론</p>
-        </div></swiper-slide
-      >
+        </div>
+      </swiper-slide>
       <swiper-slide>
         <div>
           <h3>부동산 담보 대출</h3>
@@ -49,13 +49,18 @@
           <p>전,월세 보증금 담보로도 대출가능!</p>
         </div>
         <div class="content">
-          <img src="../static/images/slide_01.png" />
+          <img :src="image1" />
           <p>대출을 디자인하다! 디자인론</p>
         </div>
       </swiper-slide>
     </swiper>
     <div class="icons">
       <div>
+        <img :src="icon1" />
+        <p class="small">복잡한 절차없는</p>
+        <p class="large">일반신용대출</p>
+      </div>
+      <!-- <div>
         <img
           src="../static/images/디자인론_이미지-아이콘_09.png"
         />
@@ -82,25 +87,20 @@
         />
         <p class="small">복잡한 절차없는</p>
         <p class="large">일반신용대출</p>
-      </div>
-      <div>
+      </div> -->
+      <!-- <div>
         <img
           src="../static/images/디자인론_이미지-아이콘_09.png"
         />
         <p class="small">복잡한 절차없는</p>
         <p class="large">일반신용대출</p>
-      </div>
-      <div>
-        <img
-          src="../static/images/디자인론_이미지-아이콘_09.png"
-        />
-        <p class="small">복잡한 절차없는</p>
-        <p class="large">일반신용대출</p>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
 <script>
+import Image1 from "../static/images/slide_01.png";
+import Icon1 from "../static/images/디자인론_이미지-아이콘_09.png";
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
@@ -121,6 +121,9 @@ export default {
     return {
       modules: [Pagination],
     };
+  },
+  data: () => {
+    return { image1: Image1, icon1: Icon1 };
   },
 };
 </script>
