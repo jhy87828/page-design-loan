@@ -8,11 +8,11 @@
     </div>
     <div>
       <img src="../static/images/logo.png" />
-      <span>
-        <p>회사소개</p>
-        <p>대출상품</p>
-        <p>대출사례</p>
-      </span>
+      <ul>
+        <li><p>회사소개</p></li>
+        <li><p>대출상품</p></li>
+        <li><p>대출사례</p></li>
+      </ul>
     </div>
   </header>
 </template>
@@ -39,11 +39,17 @@ header
       font-weight: 600
       color: white
       margin: 0
-    span
+    ul
       display: flex
       align-items: flex-end
       justify-content: space-between
-      p
+      padding: 0
+      margin: 0
+      li
+        color: white
+        list-style: none
         width: 100px
-        text-align: end
+        display: flex
+        align-items: flex-end
+        justify-content: flex-end
 </style>
