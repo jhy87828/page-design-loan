@@ -60,47 +60,43 @@
         <p class="small">복잡한 절차없는</p>
         <p class="large">일반신용대출</p>
       </div>
-      <!-- <div>
-        <img
-          src="../static/images/디자인론_이미지-아이콘_09.png"
-        />
-        <p class="small">복잡한 절차없는</p>
-        <p class="large">일반신용대출</p>
+      <div>
+        <img :src="icon2" />
+        <p class="small">파산 회복자도 가능한</p>
+        <p class="large">개인회생대출</p>
       </div>
       <div>
-        <img
-          src="../static/images/디자인론_이미지-아이콘_09.png"
-        />
-        <p class="small">복잡한 절차없는</p>
-        <p class="large">일반신용대출</p>
+        <img :src="icon3" />
+        <p class="small">무입고! 무방문!</p>
+        <p class="large">자동차 담보대출</p>
       </div>
       <div>
-        <img
-          src="../static/images/디자인론_이미지-아이콘_09.png"
-        />
-        <p class="small">복잡한 절차없는</p>
-        <p class="large">일반신용대출</p>
+        <img :src="icon4" />
+        <p class="small">선순위부터 후순위까지!</p>
+        <p class="large">부동산 담보대출</p>
       </div>
       <div>
-        <img
-          src="../static/images/디자인론_이미지-아이콘_09.png"
-        />
-        <p class="small">복잡한 절차없는</p>
-        <p class="large">일반신용대출</p>
-      </div> -->
-      <!-- <div>
-        <img
-          src="../static/images/디자인론_이미지-아이콘_09.png"
-        />
-        <p class="small">복잡한 절차없는</p>
-        <p class="large">일반신용대출</p>
-      </div> -->
+        <img :src="icon5" />
+        <p class="small">무설정,무담보로</p>
+        <p class="large">전월세 신용대출</p>
+      </div>
+      <div>
+        <img :src="icon6" />
+        <p class="small">연체만 없다면</p>
+        <p class="large">저신용자대출</p>
+      </div>
     </div>
   </section>
 </template>
 <script>
 import Image1 from "../static/images/slide_01.png";
 import Icon1 from "../static/images/디자인론_이미지-아이콘_09.png";
+import Icon2 from "../static/images/디자인론_이미지-아이콘_15.png";
+import Icon3 from "../static/images/디자인론_이미지-아이콘_07.png";
+import Icon4 from "../static/images/디자인론_이미지-아이콘_18.png";
+import Icon5 from "../static/images/디자인론_이미지-아이콘_20.png";
+import Icon6 from "../static/images/디자인론_이미지-아이콘_12.png";
+
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
@@ -123,16 +119,39 @@ export default {
     };
   },
   data: () => {
-    return { image1: Image1, icon1: Icon1 };
+    return {
+      image1: Image1,
+      icon1: Icon1,
+      icon2: Icon2,
+      icon3: Icon3,
+      icon4: Icon4,
+      icon5: Icon5,
+      icon6: Icon6,
+    };
   },
 };
 </script>
 <style scoped lang="sass">
 .swiper-slide
-    height: 400px
+    height: 300px
     display: flex
-    align-items: center
+    align-items: flex-start
     justify-content: center
+    margin-block: 5%
+    padding: 0
+    div
+      margin-right: 2%
+      h3
+        font-size: 32px
+        font-weight: 900
+        padding-top: 7%
+        padding-bottom: 3%
+        margin: 0
+      p
+        font-size: 16px
+        line-height: 1.5em
+        padding: 0
+        margin: 0
     .content
         position: relative
         p
@@ -150,4 +169,21 @@ export default {
     align-items: center
     justify-content: center
     div
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-inline: 2%
+      margin-block: 2%
+      img
+        width: 45px
+        height: 50px
+        margin-bottom: 20px
+      p
+        padding: 0
+        margin: 0
+        line-height: 1.2em
+      .small
+        font-size: 12px
+      .large
+        font-size: 15px
 </style>
