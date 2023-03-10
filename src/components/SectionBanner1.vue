@@ -29,7 +29,6 @@
         <div class="content">
           <img :src="image1" />
           <p>대출을 디자인하다! 디자인론</p>
-          <p>..</p>
         </div>
       </swiper-slide>
       <swiper-slide>
