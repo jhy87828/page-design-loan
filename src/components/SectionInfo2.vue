@@ -54,6 +54,7 @@ section
     height: 600px
     display: flex
     justify-content: center
+    border-bottom: 1px dashed #ebebeb
     img
         width: 100%
         position: absolute

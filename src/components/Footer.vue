@@ -22,6 +22,7 @@ export default {
 
 <template>
   <footer>
+    <button>전국 대부업체 조회하기</button>
     <li v-for="(item, index) in items1" :key="index">{{ item }}</li>
     <li style="color: red">
       취급수수료 등 기타부대비용 없음. 중개수수료를 요구하거나받는 것은
@@ -33,6 +34,7 @@ export default {
 
 <style scoped lang="sass">
 footer
+    background: #ebebeb
     padding-inline: 3%
     padding-block: 5%
 </style>
