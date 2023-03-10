@@ -1,16 +1,10 @@
 <script>
-import Image1 from "../static/images/image17.png";
-import Image2 from "../static/images/image18.png";
-import Image3 from "../static/images/image19.png";
-import Image4 from "../static/images/image20.png";
+import Image1 from "../static/images/green-leaf.png";
 
 export default {
   data: () => {
     return {
       image1: Image1,
-      image2: Image2,
-      image3: Image3,
-      image4: Image4,
     };
   },
 };
@@ -18,33 +12,38 @@ export default {
 
 <template>
   <section>
-    <span>
-      <h2>디자인론이 고객님들께</h2>
-      <h2 style="color: #f47500">특별한 행복으로</h2>
-      <h2>함께 합니다.</h2></span
-    >
-
-    <h1>디자인론 채무통합서비스</h1>
+    <img :src="image1" />
     <div>
-      <div>
-        <img :src="image1" />
-        <p class="small">고객별 최고 한도로</p>
-        <p class="large">대출한도는 더 높게</p>
+      <span>
+        <h1>디자인론과 함께하는 현명한 나의</h1>
+        <h1>채무통합대출</h1></span
+      >
+
+      <div class="sub-title">
+        <p>이제부터 대출은 하나로 통합하자!</p>
+        <span
+          ><p>3건이상 사용자</p>
+          <p style="color: #f47500">대환대출</p>
+          <p>가능!!</p></span
+        >
       </div>
-      <div>
-        <img :src="image2" />
-        <p class="small">당일심사 당일송금</p>
-        <p class="large">빠른심사로 부담없게</p>
-      </div>
-      <div>
-        <img :src="image3" />
-        <p class="small">회차, 실행별</p>
-        <p class="large">금융 맞춤컨설팅</p>
-      </div>
-      <div>
-        <img :src="image4" />
-        <p class="small">고객정보도 철저하게</p>
-        <p class="large">퍼펙트 관리</p>
+      <div class="detail">
+        <div>
+          <p>대출대상</p>
+          <p>현재</p>
+        </div>
+        <div>
+          <p>대출금리</p>
+          <p>현재</p>
+        </div>
+        <div>
+          <p>대출한도</p>
+          <p>현재</p>
+        </div>
+        <div>
+          <p>상품특징</p>
+          <p>현재</p>
+        </div>
       </div>
     </div>
   </section>
@@ -52,51 +51,42 @@ export default {
 
 <style scoped lang="sass">
 section
+    height: 600px
     display: flex
-    flex-direction: column
-    align-items: center
     justify-content: center
-    border-top: 1px dashed #c8c8c8
-    border-bottom: 1px dashed #c8c8c8
+    img
+        width: 100%
+        position: absolute
+        z-index: 0
 
-    padding-block: 5%
-    padding-bottom: 10%
-    margin-block: 4%
-    span
-        display: flex
-        h2
-            margin-right: 5px
-            font-size: 24px
-            margin-bottom: 1%
-    h1
-        font-size: 32px
-        margin-top: 0
-        margin-bottom: 3%
     div
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        z-index: 10
+        span
+            display: flex
+            flex-direction: row
+            h1
+                font-size: 36px
+                color: #4CABB4
+                margin-right: 7px
+                margin-block: 0
+            .sub-title
+                display: flex
+                flex-direction: column
+                span
+                    margin: 0
+                    padding: 0
+        p
+            padding: 0
+            margin: 0
+    .detail
         display: flex
         flex-direction: row
         div
-            width: 230px
-            padding-block: 2%
-            display: flex
-            flex-direction: column
-            align-items: center
-            justify-content: center
-            border: 1px dashed #808080
-            margin-inline: 10px
-            p
-                padding-inline: 3%
-                padding-block: 0
-                color: #666666
-
-            .small
-                margin-top: 8%
-                margin-bottom: 0
-                font-size: 18px
-                font-weight: 500
-            .large
-                margin-top: 0
-                margin-bottom: 1%
-                font-weight: 600
-                font-size: 24px
+            width: 120px
+            padding-block: 5%
+            padding-inline: 5%
 </style>
