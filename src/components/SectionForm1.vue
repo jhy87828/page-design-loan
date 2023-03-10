@@ -43,6 +43,10 @@
     </div>
     <input type="button" value="상담신청" />
   </form>
+  <div>
+    <button>전문가 무료상담</button>
+    <button>카카오톡 상담신청</button>
+  </div>
 </template>
 
 <style scoped lang="sass">
@@ -57,10 +61,9 @@ form
         margin-inline: 0
         margin-block: 3%
     input[type="text"]
-        min-width: 120px
+        min-width: 150px
         height: 15px
         padding: 5px
-        margin-inline: 2%
     input[type="button"]
         width: 120px
         height: 40px
@@ -74,7 +77,7 @@ form
         margin-block: 2%
         margin-inline: 15%
         p
-            width: 100px
+            width: 140px
             text-align: start
     div
         min-width: 300px
