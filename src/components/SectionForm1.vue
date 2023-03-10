@@ -8,13 +8,16 @@
       <h2>여부 문의</h2>
     </span>
     <div>
-      <p>성함</p>
-      <input type="text" name="Name" />
+      <span class="info">
+        <p>성함</p>
+        <input type="text" name="Name" />
+      </span>
+      <span class="info">
+        <p>연락처</p>
+        <input type="text" name="Number" />
+      </span>
     </div>
-    <div>
-      <p>연락처</p>
-      <input type="text" name="Number" />
-    </div>
+
     <div>
       <div>
         <span
@@ -53,4 +56,38 @@ form
         padding: 0
         margin-inline: 0
         margin-block: 3%
+    input[type="text"]
+        min-width: 120px
+        height: 15px
+        padding: 5px
+        margin-inline: 2%
+    input[type="button"]
+        width: 120px
+        height: 40px
+        margin-left: 3%
+        border-radius: 10px
+        background: #ffffff
+        font-size: 16px
+    .info
+        display: flex
+        align-items: center
+        margin-block: 2%
+        margin-inline: 15%
+        p
+            width: 100px
+            text-align: start
+    div
+        min-width: 300px
+        display: flex
+        flex-direction: column
+        div
+            display: flex
+            flex-direction: row
+        span
+            display: flex
+            flex-direction: row
+            margin-block: 2%
+            p
+                margin: 0
+                padding: 0
 </style>
