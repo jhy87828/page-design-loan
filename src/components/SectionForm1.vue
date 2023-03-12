@@ -1,7 +1,6 @@
 <script setup></script>
 
 <template>
-  <p>form</p>
   <form>
     <span>
       <h2>대출 가능</h2>
@@ -43,17 +42,34 @@
     </div>
     <input type="button" value="상담신청" />
   </form>
-  <div>
-    <button>전문가 무료상담</button>
-    <button>카카오톡 상담신청</button>
+  <div class="buttons">
+    <button style="background-color: aquamarine">전문가 무료상담</button>
+    <button style="background-color: yellow">카카오톡 상담신청</button>
   </div>
 </template>
 
 <style scoped lang="sass">
+.buttons
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-block: 1%
+  button
+    width: 200px
+    height: 40px
+    font-size: 16px
+    text-align: center
+    border-radius: 20px
+    border: none
+    margin-inline: 1%
+
 form
     display: flex
     align-items: center
     justify-content: center
+    padding-top: 5%
+    padding-bottom: 3%
     h2
 
         line-height: 1.2em
@@ -65,12 +81,16 @@ form
         height: 15px
         padding: 5px
     input[type="button"]
+        background: #ebebeb
         width: 120px
-        height: 40px
+        height: 35px
         margin-left: 3%
-        border-radius: 10px
-        background: #ffffff
+        border-radius: 20px
+        border: none
+
         font-size: 16px
+    input[type="checkbox"]
+        margin-right: 15px
     .info
         display: flex
         align-items: center

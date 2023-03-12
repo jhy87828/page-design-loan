@@ -138,7 +138,6 @@ export default {
     align-items: flex-start
     justify-content: center
     margin-block: 5%
-    padding: 0
     div
       margin-right: 2%
       h3
@@ -168,6 +167,7 @@ export default {
     display: flex
     align-items: center
     justify-content: center
+    padding-block: 1%
     div
       display: flex
       flex-direction: column

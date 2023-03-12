@@ -51,12 +51,13 @@ export default {
 
 <style scoped lang="sass">
 section
+    width: 100%
     height: 600px
     display: flex
     justify-content: center
-    border-bottom: 1px dashed #ebebeb
+    border-bottom: 1px dashed #787878
     img
-        width: 100%
+        width: 90%
         position: absolute
         z-index: 0
 
