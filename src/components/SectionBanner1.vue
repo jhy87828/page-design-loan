@@ -226,7 +226,6 @@ p
         flex-direction: row
         align-items: center
         justify-content: center
-        padding-left: 2%
         padding-bottom: 8%
         margin-block: 1%
 
