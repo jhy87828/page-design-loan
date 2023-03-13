@@ -100,12 +100,18 @@ import Image1 from "../static/images/slide_01.png";
 import Image2 from "../static/images/slide_02.png";
 import Image3 from "../static/images/slide_03.png";
 import Image4 from "../static/images/slide_04.png";
-import Icon1 from "../static/images/디자인론_이미지-아이콘_09.png";
-import Icon2 from "../static/images/디자인론_이미지-아이콘_15.png";
-import Icon3 from "../static/images/디자인론_이미지-아이콘_07.png";
-import Icon4 from "../static/images/디자인론_이미지-아이콘_18.png";
-import Icon5 from "../static/images/디자인론_이미지-아이콘_20.png";
-import Icon6 from "../static/images/디자인론_이미지-아이콘_12.png";
+// import Icon1 from "../static/images/디자인론_이미지-아이콘_09.png";
+// import Icon2 from "../static/images/디자인론_이미지-아이콘_15.png";
+// import Icon3 from "../static/images/디자인론_이미지-아이콘_07.png";
+// import Icon4 from "../static/images/디자인론_이미지-아이콘_18.png";
+// import Icon5 from "../static/images/디자인론_이미지-아이콘_20.png";
+// import Icon6 from "../static/images/디자인론_이미지-아이콘_12.png";
+import Icon1 from "../static/images/아이콘-3.png";
+import Icon2 from "../static/images/아이콘-2.png";
+import Icon3 from "../static/images/아이콘-4.png";
+import Icon4 from "../static/images/아이콘-1.png";
+import Icon5 from "../static/images/아이콘-5.png";
+import Icon6 from "../static/images/아이콘-6.png";
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -268,10 +274,10 @@ p
         align-items: center
         margin-inline: 2%
         margin-block: 2%
-        img
-          width: 45px
-          height: 50px
-          margin-bottom: 20px
+        // img
+        //   width: 35px
+        //   height: 35px
+        //   margin-bottom: 20px
         p
           padding: 0
           margin: 0
