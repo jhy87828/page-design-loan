@@ -43,8 +43,8 @@
     <input type="button" value="상담신청" />
   </form>
   <div class="buttons">
-    <button style="background-color: aquamarine">전문가 무료상담</button>
-    <button style="background-color: yellow">카카오톡 상담신청</button>
+    <button style="background-color: #c8edf3">전문가 무료상담</button>
+    <button style="background-color: #fad223">카카오톡 상담신청</button>
   </div>
 </template>
 
@@ -56,11 +56,11 @@
   justify-content: center
   padding-block: 1%
   button
-    width: 200px
-    height: 40px
+    width: 320px
+    height: 50px
     font-size: 16px
     text-align: center
-    border-radius: 20px
+    border-radius: 25px
     border: none
     margin-inline: 1%
 
@@ -82,12 +82,11 @@ form
         padding: 5px
     input[type="button"]
         background: #ebebeb
-        width: 120px
-        height: 35px
+        width: 220px
+        height: 40px
         margin-left: 3%
         border-radius: 20px
         border: none
-
         font-size: 16px
     input[type="checkbox"]
         margin-right: 15px
@@ -97,7 +96,8 @@ form
         margin-block: 2%
         margin-inline: 15%
         p
-            width: 140px
+            margin-right: 20px
+            width: 180px
             text-align: start
     div
         min-width: 300px

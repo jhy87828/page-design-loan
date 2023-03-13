@@ -9,51 +9,52 @@
       class="mySwiper"
     >
       <swiper-slide>
-        <div>
-          <h3>개인 회생 대출</h3>
+        <div class="detail">
+          <p class="detail-title">개인 회생 대출</p>
           <p>개인회생자라면 미납회차,</p>
           <p>기대출이 있어도 진행가능!</p>
           <p>파산면책자, 신용회복자도 대출 가능!</p>
         </div>
         <div class="content">
           <img :src="image1" />
-          <p>대출을 디자인하다! 디자인론</p>
+          <p style="top: 55px">대출을 디자인하다! 디자인론</p>
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div>
-          <h3>일반 신용 대출</h3>
+        <div class="detail">
+          <p class="detail-title">일반 신용 대출</p>
           <p>복잡한 절차없는 상상론 일반신용대출!</p>
           <p>직장인, 사업자, 주부라면 복잡한 절차없이!</p>
         </div>
         <div class="content">
-          <img :src="image1" />
+          <img :src="image2" />
           <p>대출을 디자인하다! 디자인론</p>
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div>
-          <h3>자동차 담보 대출</h3>
+        <div class="detail">
+          <p class="detail-title">자동차 담보 대출</p>
           <p>무입고 무방문!</p>
           <p>타던차 그대로 시세 100% 대출 가능!</p>
         </div>
         <div class="content">
-          <img :src="image1" />
-          <p>대출을 디자인하다! 디자인론</p>
+          <img :src="image3" />
+          <p style="top: 55px">대출을 디자인하다! 디자인론</p>
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div>
-          <h3>부동산 담보 대출</h3>
+        <div class="detail">
+          <p class="detail-title">부동산 담보 대출</p>
           <p>본인명의의 부동산 소유자라면!</p>
           <p>전,월세 보증금 담보로도 대출가능!</p>
         </div>
         <div class="content">
-          <img :src="image1" />
-          <p>대출을 디자인하다! 디자인론</p>
+          <img :src="image4" />
+          <p style="top: 85px">대출을 디자인하다! 디자인론</p>
         </div>
       </swiper-slide>
     </swiper>
+
     <div class="icons">
       <div>
         <img :src="icon1" />
@@ -90,6 +91,9 @@
 </template>
 <script>
 import Image1 from "../static/images/slide_01.png";
+import Image2 from "../static/images/slide_02.png";
+import Image3 from "../static/images/slide_03.png";
+import Image4 from "../static/images/slide_04.png";
 import Icon1 from "../static/images/디자인론_이미지-아이콘_09.png";
 import Icon2 from "../static/images/디자인론_이미지-아이콘_15.png";
 import Icon3 from "../static/images/디자인론_이미지-아이콘_07.png";
@@ -121,6 +125,9 @@ export default {
   data: () => {
     return {
       image1: Image1,
+      image2: Image2,
+      image3: Image3,
+      image4: Image4,
       icon1: Icon1,
       icon2: Icon2,
       icon3: Icon3,
@@ -132,37 +139,47 @@ export default {
 };
 </script>
 <style scoped lang="sass">
-.swiper-slide
-    height: 300px
-    display: flex
-    align-items: flex-start
-    justify-content: center
-    margin-block: 5%
-    div
-      margin-right: 2%
-      h3
+@font-face
+    font-family: 'GyeonggiTitleM'
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+section
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+p
+  margin-block: 0
+  padding: 0
+  line-height: 1.5em
+  font-size: 16px
+  color: #4f4f4f
+
+.swiper
+    width: 100%
+    .swiper-slide
+      height: 300px !important
+      padding-top: 60px
+      display: flex
+      flex-direction: row
+      align-items: center
+
+.content
+    position: relative
+    p
+        position: absolute
+        top: 10px
+        left: 130px
         font-size: 32px
-        font-weight: 900
-        padding-top: 7%
-        padding-bottom: 3%
-        margin: 0
-      p
-        font-size: 16px
-        line-height: 1.5em
-        padding: 0
-        margin: 0
-    .content
-        position: relative
-        p
-            position: absolute
-            top: 15px
-            left: 55px
-            font-size: 26px
-            font-weight: 800
-            color: black
-        img
-            width: 400px
+        font-weight: 800
+        color: white
+        text-shadow: -1px 0 #4cabb4, 0 1px #4cabb4, 1px 0 #4cabb4, 0 -1px #4cabb4
+    img
+        width: 500px
 .icons
+    width: 100%
     background: #E3F2F3
     display: flex
     align-items: center
@@ -186,4 +203,76 @@ export default {
         font-size: 12px
       .large
         font-size: 15px
+
+@media screen and (min-width: 1024px)
+
+  p
+    margin-block: 0
+    padding: 0
+    line-height: 1.5em
+    font-size: 16px
+    color: #4f4f4f
+  .swiper
+      margin-inline: 0
+      .swiper-slide
+        height: auto
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        padding-left: 2%
+        padding-bottom: 8%
+        margin-block: 1%
+
+
+  .detail
+    display: flex
+    flex-direction: column
+    height: 100%
+    justify-content: center
+    color: #333
+    .detail-title
+      font-size: 32px
+
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+      font-family: 'GyeonggiTitleM'
+      margin-bottom: 10px
+
+  .content
+      position: relative
+      z-index: 10
+      p
+          position: absolute
+          left: 130px
+          font-size: 32px
+          font-weight: 800
+      img
+          width: 600px
+  .icons
+      width: 100%
+      background: #E3F2F3
+      display: flex
+      align-items: center
+      justify-content: center
+      padding-block: 1%
+      div
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-inline: 2%
+        margin-block: 2%
+        img
+          width: 45px
+          height: 50px
+          margin-bottom: 20px
+        p
+          padding: 0
+          margin: 0
+          line-height: 1.2em
+        .small
+          font-size: 12px
+        .large
+          font-size: 15px
 </style>
