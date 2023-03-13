@@ -2,9 +2,15 @@
   <section>
     <swiper
       :spaceBetween="30"
+      :effect="'fade'"
       :pagination="{
         clickable: true,
       }"
+      :autoplay="{
+        delay: 100,
+        disableOnInteraction: false,
+      }"
+      :loop="true"
       :modules="modules"
       class="mySwiper"
     >
