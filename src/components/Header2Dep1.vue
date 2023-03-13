@@ -134,6 +134,9 @@ header
             text-align: center
             border-bottom: 1px solid #ebebeb
             padding-block: 10%
+            &:hover
+              color: #CCFBFF
+
         &:hover
           ul
             display: block
