@@ -65,12 +65,14 @@ section
     align-items: center
     justify-content: center
     color: #333
-    padding-block: 5%
+    padding-block: 2%
     .title
         display: flex
         flex-direction: row
         align-items: center
-        padding-inline: 2%
+        padding-inline: 1%
+        border-bottom: 1px solid #787878
+        margin-bottom: 3%
         h1
             margin-right: 5px
             font-weight: 400
@@ -87,12 +89,12 @@ section
             justify-content: center
             margin-inline: 3%
             div
-                width: 90px
+                width: 80px
                 height: 80px
                 display: flex
                 align-items: center
                 justify-content: center
-                border: 1px solid #949494
+                border: 1px solid #787878
                 border-radius: 70%
                 padding: 10%
                 img
