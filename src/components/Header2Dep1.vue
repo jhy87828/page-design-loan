@@ -99,7 +99,7 @@ export default {
     justify-content: center
     align-items: center
     padding-block: 10px
-    z-index: 10
+    z-index: 200
     div
       width: 80%
       display: flex
