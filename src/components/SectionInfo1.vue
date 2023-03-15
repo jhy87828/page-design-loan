@@ -1,8 +1,13 @@
 <script>
-import Image1 from "../static/images/image17.png";
-import Image2 from "../static/images/image18.png";
-import Image3 from "../static/images/image19.png";
-import Image4 from "../static/images/image20.png";
+// import Image1 from "../static/images/image17.png";
+// import Image2 from "../static/images/image18.png";
+// import Image3 from "../static/images/image19.png";
+// import Image4 from "../static/images/image20.png";
+
+import Image1 from "../static/images/info-icon-1.png";
+import Image2 from "../static/images/info-icon-2.png";
+import Image3 from "../static/images/info-icon-3.png";
+import Image4 from "../static/images/info-icon-4.png";
 
 export default {
   data: () => {
@@ -62,6 +67,9 @@ section
     padding-block: 5%
     padding-bottom: 10%
     margin-block: 4%
+
+    color: #08959f
+
     span
         display: flex
         h2
@@ -69,7 +77,8 @@ section
             font-size: 24px
             margin-bottom: 1%
     h1
-        font-size: 32px
+        font-size: 46px
+        font-weight: 800
         margin-top: 0
         margin-bottom: 3%
     div
@@ -82,21 +91,27 @@ section
             flex-direction: column
             align-items: center
             justify-content: center
-            border: 1px dashed #808080
+            border: 1px dashed #ebebeb
             margin-inline: 10px
+            img
+              width: 30%
             p
                 padding-inline: 3%
                 padding-block: 0
-                color: #666666
 
             .small
-                margin-top: 8%
+                line-height: 1em
+                margin-top: 10%
                 margin-bottom: 0
                 font-size: 18px
-                font-weight: 500
+                font-weight: 600
+
+                color: #47a9b3
             .large
                 margin-top: 0
-                margin-bottom: 1%
-                font-weight: 600
+                margin-bottom: 5%
+                font-weight: 700
                 font-size: 24px
+
+                // color:
 </style>

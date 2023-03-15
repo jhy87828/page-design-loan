@@ -42,10 +42,6 @@
     </div>
     <input type="button" value="상담신청" />
   </form>
-  <div class="buttons">
-    <button style="background-color: #c8edf3">전문가 무료상담</button>
-    <button style="background-color: #fad223">카카오톡 상담신청</button>
-  </div>
 </template>
 
 <style scoped lang="sass">
