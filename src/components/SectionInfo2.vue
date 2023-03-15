@@ -1,5 +1,5 @@
 <script>
-import Image1 from "../static/images/green-leaf.png";
+import Image1 from "../static/images/green-leaves-3.png";
 
 export default {
   data: () => {
@@ -23,7 +23,7 @@ export default {
         <p>이제부터 대출은 하나로 통합하자!</p>
         <span
           ><p>3건이상 사용자</p>
-          <p style="color: #f47500">대환대출</p>
+          <p style="color: #f47500; margin-inline: 5px">대환대출</p>
           <p>가능!!</p></span
         >
         <p>
@@ -46,7 +46,7 @@ export default {
         ></div>
         <div>
           <p class="large">대출금리</p>
-          <p class="small" style="color: #f47500">연 20% 이내, 수수료 X</p>
+          <p class="small" style="color: #e87518">연 20% 이내, 수수료 X</p>
         </div>
         <div
           style="
@@ -58,8 +58,8 @@ export default {
         ></div>
         <div>
           <p class="large">대출한도</p>
-          <p class="small" style="color: #f47500">최고 8,000만원</p>
-          <p class="small" style="color: #f47500">(개인별 차등)</p>
+          <p class="small" style="color: #e87518">최고 8,000만원</p>
+          <p class="small" style="color: #e87518">(개인별 차등)</p>
         </div>
         <div
           style="
@@ -71,9 +71,9 @@ export default {
         ></div>
         <div>
           <p class="large">상품특징</p>
-          <p class="small" style="color: #f47500">현재 사용중인 대출</p>
-          <p class="small" style="color: #f47500">통합 대환대출 및</p>
-          <p class="small" style="color: #f47500">추가자금대출 가능</p>
+          <p class="small" style="color: #e87518">현재 사용중인 대출</p>
+          <p class="small" style="color: #e87518">통합 대환대출 및</p>
+          <p class="small" style="color: #e87518">추가자금대출 가능</p>
         </div>
       </div>
     </div>
@@ -87,13 +87,14 @@ section
     display: flex
     justify-content: center
     border-bottom: 1px dashed #787878
+
     p
       color: #4CABB4
-      font-weight: 500
+      font-weight: 700
       padding: 0
       margin: 0
     img
-        width: 90%
+        width: 100%
         position: absolute
         z-index: 0
 
@@ -107,16 +108,19 @@ section
             display: flex
             flex-direction: row
             h1
-                font-size: 36px
-                color: #4CABB4
+                font-size: 40px
+                font-weight: 800
+
+                text-shadow: 2px 2px 1px #ffffff
+                color: #08959f
                 margin-right: 7px
                 margin-block: 0
 .sub-title
     display: flex
     flex-direction: column
-    color: #4CABB4
-    padding-bottom: 5%
-    margin-block: 5%
+    color: #08959f
+    padding-bottom: 7%
+    margin-block: 2%
 
 .detail
     display: flex

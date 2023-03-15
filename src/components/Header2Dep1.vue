@@ -55,7 +55,6 @@ export default {
 
 <style scoped lang="sass">
 header
-  background: #4cabb4
   postiion: fixed
   display: flex
   flex-direction: column
@@ -80,7 +79,7 @@ header
 
 @media screen and (min-width: 1024px)
   header
-    background: #4cabb4
+    background: #08959f
     postiion: fixed
     display: flex
     flex-direction: column
