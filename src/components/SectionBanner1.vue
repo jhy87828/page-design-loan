@@ -180,14 +180,6 @@ p
 
 .content
     position: relative
-    p
-        position: absolute
-        top: 10px
-        left: 130px
-        font-size: 32px
-        font-weight: 800
-        color: white
-        text-shadow: -1px 0 #4cabb4, 0 1px #4cabb4, 1px 0 #4cabb4, 0 -1px #4cabb4
     img
         width: 500px
 .icons

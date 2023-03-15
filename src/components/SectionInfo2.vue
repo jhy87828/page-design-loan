@@ -107,8 +107,11 @@ section
             display: flex
             flex-direction: row
             h1
-                font-size: 36px
-                color: #4CABB4
+                font-size: 46px
+                font-weight: 800
+
+                text-shadow: 2px 2px 1px #ffffff
+                color: #08959f
                 margin-right: 7px
                 margin-block: 0
 .sub-title
