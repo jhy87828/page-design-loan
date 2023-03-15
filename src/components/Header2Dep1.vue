@@ -56,7 +56,7 @@ export default {
         <li><p>회사소개</p></li>
         <li>
           <p>대출상품</p>
-          <ul class="sub-menu">
+          <!-- <ul class="sub-menu">
             <li>신용 대출</li>
             <li>개인회생 대출</li>
             <li>차담보 대출</li>
@@ -64,7 +64,7 @@ export default {
             <li>프리랜서/주부 대출</li>
             <li>카카오톡</li>
             <li>로고</li>
-          </ul>
+          </ul> -->
         </li>
         <li><p>대출사례</p></li>
       </ul>
