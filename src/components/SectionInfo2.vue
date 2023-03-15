@@ -108,11 +108,7 @@ section
             display: flex
             flex-direction: row
             h1
-<<<<<<< HEAD
                 font-size: 46px
-=======
-                font-size: 40px
->>>>>>> 98c0a62b5985ec1ec81270998f515afcc6b6cce4
                 font-weight: 800
 
                 text-shadow: 2px 2px 1px #ffffff
