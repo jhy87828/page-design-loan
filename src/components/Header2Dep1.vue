@@ -43,8 +43,8 @@ export default {
 </script>
 
 <template>
-  <header>
-    <div :class="{ 'headroom--unpinned': scrolled }" class="headroom header">
+  <header :class="{ 'headroom--unpinned': scrolled }" class="headroom header">
+    <div>
       <p>(주)오케이다이렉트대부중개 2016-서울강동-00074(대부중개업)</p>
       <p style="font-size: 24px; font-weight: 700; padding-right: 5%">
         1661-0670
@@ -84,7 +84,8 @@ export default {
     transform: translateY(0%)
 
 .headroom--unpinned
-    transform: translateY(-100%)
+    transform: translateY(-40%)
+
 
 
 @media screen and (min-width: 24px)
@@ -116,9 +117,9 @@ export default {
 
   .pc-menu
     ul
+      display: flex
       list-style: none
       margin-bottom: 0
-      display: flex
 
       li
         width: 120px
