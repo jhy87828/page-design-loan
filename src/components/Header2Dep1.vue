@@ -77,7 +77,7 @@ header
       margin: 0
 
 
-@media screen and (min-width: 1024px)
+@media screen and (min-width: 24px)
   header
     background: #08959f
     postiion: fixed
