@@ -23,7 +23,6 @@
         </div>
         <div class="content">
           <img :src="image1" />
-          <p style="top: 55px">대출을 디자인하다! 디자인론</p>
         </div>
       </swiper-slide>
       <swiper-slide>
@@ -34,7 +33,6 @@
         </div>
         <div class="content">
           <img :src="image2" />
-          <p>대출을 디자인하다! 디자인론</p>
         </div>
       </swiper-slide>
       <swiper-slide>
@@ -45,7 +43,6 @@
         </div>
         <div class="content">
           <img :src="image3" />
-          <p style="top: 55px">대출을 디자인하다! 디자인론</p>
         </div>
       </swiper-slide>
       <swiper-slide>
@@ -56,7 +53,6 @@
         </div>
         <div class="content">
           <img :src="image4" />
-          <p style="top: 85px">대출을 디자인하다! 디자인론</p>
         </div>
       </swiper-slide>
     </swiper>

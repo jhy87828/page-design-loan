@@ -88,6 +88,23 @@ section
             align-items: center
             justify-content: center
             margin-inline: 3%
+            &:first-child
+              &::after
+                top: -65px
+                left: 80px
+            &:last-child
+              &::after
+                position: relative
+                top: -50px
+                left: 65px
+                content: ">"
+                color: white
+            &::after
+              position: relative
+              top: -60px
+              left: 70px
+              font-weight: 600
+              content: ">"
             div
                 width: 80px
                 height: 80px
@@ -104,8 +121,8 @@ section
                 display: flex
                 flex-direction: column
                 align-items: center
-                p
 
+                p
                     padding: 0
                     line-height: 1.3em
                 .step

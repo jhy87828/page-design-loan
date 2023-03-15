@@ -6,17 +6,45 @@ export default {
   components: {
     DropDownMenu,
   },
-  data: () => {
+  data() {
     return {
-      showMenu: false,
+      limitPosition: 100,
+      scrolled: false,
+      lastPosition: 0,
     };
+  },
+
+  methods: {
+    handleScroll() {
+      if (
+        this.lastPosition < window.scrollY &&
+        this.limitPosition < window.scrollY
+      ) {
+        this.scrolled = true;
+        // move up!
+      }
+
+      if (this.lastPosition > window.scrollY) {
+        this.scrolled = false;
+        // move down
+      }
+
+      this.lastPosition = window.scrollY;
+      // this.scrolled = window.scrollY > 250;
+    },
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
 };
 </script>
 
 <template>
   <header>
-    <div>
+    <div :class="{ 'headroom--unpinned': scrolled }" class="headroom header">
       <p>(주)오케이다이렉트대부중개 2016-서울강동-00074(대부중개업)</p>
       <p style="font-size: 24px; font-weight: 700; padding-right: 5%">
         1661-0670
@@ -24,15 +52,6 @@ export default {
     </div>
     <div class="pc-menu">
       <img src="../static/images/logo.png" />
-      <!-- <div id="button_wrapper">
-        <button id="e_button">E</button>
-        <ul id="zul_menu">
-          <li class="test"><a class="active" href="mainPage.php">Home</a></li>
-          <li class="test"><a href="Cats.php"> Cats</a></li>
-          <li class="test"><a href="Dogs.php">Dogs</a></li>
-          <li class="test"><a href="#contact">Contact</a></li>
-        </ul>
-      </div> -->
       <ul>
         <li><p>회사소개</p></li>
         <li>
@@ -43,6 +62,8 @@ export default {
             <li>차담보 대출</li>
             <li>주택/전월세 담보 대출</li>
             <li>프리랜서/주부 대출</li>
+            <li>카카오톡</li>
+            <li>로고</li>
           </ul>
         </li>
         <li><p>대출사례</p></li>
@@ -54,33 +75,24 @@ export default {
 </template>
 
 <style scoped lang="sass">
-header
-  postiion: fixed
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
-  padding-block: 1%
-  div
-    width: 80%
-    display: flex
-    justify-content: space-between
-    align-items: flex-end
-    padding-bottom: 10px
-    img
-      height: 45px
-      margin: 2px
-    p
-      font-size: 17px
-      font-weight: 600
-      color: white
-      margin: 0
+
+.headroom
+    will-change: transform
+    transition: transform 200ms linear
+
+.headroom--pinned
+    transform: translateY(0%)
+
+.headroom--unpinned
+    transform: translateY(-100%)
 
 
 @media screen and (min-width: 24px)
   header
+    height: auto
     background: #08959f
-    postiion: fixed
+    position: sticky
+    top: 0px
     display: flex
     flex-direction: column
     justify-content: center
