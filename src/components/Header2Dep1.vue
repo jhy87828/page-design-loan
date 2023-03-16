@@ -46,17 +46,17 @@ export default {
   <header :class="{ 'headroom--unpinned': scrolled }" class="headroom header">
     <div>
       <p>(주)오케이다이렉트대부중개 2016-서울강동-00074(대부중개업)</p>
-      <p style="font-size: 24px; font-weight: 700; padding-right: 5%">
+      <p style="font-size: 30px; font-weight: 600; margin-right: 25px">
         1661-0670
       </p>
     </div>
     <div class="pc-menu">
       <img src="../static/images/logo.png" />
       <ul>
-        <li><p>회사소개</p></li>
-        <li>
+        <li><p>일반신용대출</p></li>
+        <!-- <li>
           <p>대출상품</p>
-          <!-- <ul class="sub-menu">
+          <ul class="sub-menu">
             <li>신용 대출</li>
             <li>개인회생 대출</li>
             <li>차담보 대출</li>
@@ -64,9 +64,13 @@ export default {
             <li>프리랜서/주부 대출</li>
             <li>카카오톡</li>
             <li>로고</li>
-          </ul> -->
-        </li>
-        <li><p>대출사례</p></li>
+          </ul>
+        </li> -->
+        <li><p>개인회생대출</p></li>
+        <li><p>자동차 담보대출</p></li>
+        <li><p>부동산 담보대출</p></li>
+        <li><p>전월세 신용대출</p></li>
+        <li><p>저신용자대출</p></li>
       </ul>
 
       <!-- <DropDownMenu /> -->
@@ -110,10 +114,16 @@ export default {
         height: 45px
         margin: 2px
       p
-        font-size: 17px
+        font-size: 24px
         font-weight: 600
         color: white
         margin: 0
+      ul
+        margin: 0
+        padding-inline: 0
+        li
+          p
+            font-size: 16px
 
   .pc-menu
     ul
