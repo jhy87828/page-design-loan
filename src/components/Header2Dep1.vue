@@ -121,47 +121,53 @@ export default {
       ul
         margin: 0
         padding-inline: 0
+        display: flex
         li
+          display: flex
+          align-items: center
+          justify-content: center
+          width: 120px
+          list-style: none
           p
             font-size: 16px
 
-  .pc-menu
-    ul
-      display: flex
-      list-style: none
-      margin-bottom: 0
+  // .pc-menu
+  //   ul
+  //     display: flex
+  //     list-style: none
+  //     margin-bottom: 0
 
-      li
-        width: 120px
-        float: left
-        position: relative
-        cursor: pointer
-        padding-left: 1%
-        color: white
-        font-weight: 700
-        font-size: 18px
-        ul
-          left: -45px
-          display: none
-          width: 200px
-          position: absolute
-          z-index: 30
-          padding: 0
-          li
-            width: 150px
-            background:  #4cabb4
-            cursor: pointer
-            font-size: 15px
-            font-weight: 500
-            text-align: center
-            border-bottom: 1px solid #ebebeb
-            padding-block: 10%
-            &:hover
-              color: #CCFBFF
+  //     li
+  //       width: 120px
+  //       float: left
+  //       position: relative
+  //       cursor: pointer
+  //       padding-left: 1%
+  //       color: white
+  //       font-weight: 700
+  //       font-size: 18px
+  //       ul
+  //         left: -45px
+  //         display: none
+  //         width: 200px
+  //         position: absolute
+  //         z-index: 30
+  //         padding: 0
+  //         li
+  //           width: 250px
+  //           background:  #4cabb4
+  //           cursor: pointer
+  //           font-size: 15px
+  //           font-weight: 500
+  //           text-align: center
+  //           border-bottom: 1px solid #ebebeb
+  //           padding-block: 10%
+  //           &:hover
+  //             color: #CCFBFF
 
-        &:hover
-          ul
-            display: block
+  //       &:hover
+  //         ul
+  //           display: block
 
 
 
