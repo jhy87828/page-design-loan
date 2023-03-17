@@ -5,10 +5,6 @@ import Footer from "./components/Footer.vue";
 
 <template>
   <Header2Dep1 />
-  <nav>
-    <router-link to="/">Main</router-link>
-    <router-link to="/foo">Foo</router-link>
-  </nav>
   <router-view></router-view>
   <Footer />
 </template>

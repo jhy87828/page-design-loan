@@ -53,7 +53,9 @@ export default {
     <div class="pc-menu">
       <img src="../static/images/logo.png" />
       <ul>
-        <li><p>일반신용대출</p></li>
+        <router-link class="router-link" to="/"
+          ><p>일반신용대출</p></router-link
+        >
         <!-- <li>
           <p>대출상품</p>
           <ul class="sub-menu">
@@ -66,11 +68,21 @@ export default {
             <li>로고</li>
           </ul>
         </li> -->
-        <li><p>개인회생대출</p></li>
-        <li><p>자동차 담보대출</p></li>
-        <li><p>부동산 담보대출</p></li>
-        <li><p>전월세 신용대출</p></li>
-        <li><p>저신용자대출</p></li>
+        <router-link class="router-link" to="/foo"
+          ><p>개인회생대출</p></router-link
+        >
+        <router-link class="router-link" to="/"
+          ><p>자동차 담보대출</p></router-link
+        >
+        <router-link class="router-link" to="/"
+          ><p>부동산 담보대출</p></router-link
+        >
+        <router-link class="router-link" to="/"
+          ><p>전월세 신용대출</p></router-link
+        >
+        <router-link class="router-link" to="/"
+          ><p>저신용자대출</p></router-link
+        >
       </ul>
 
       <!-- <DropDownMenu /> -->
@@ -122,7 +134,8 @@ export default {
         margin: 0
         padding-inline: 0
         display: flex
-        li
+        .router-link
+          text-decoration: none
           display: flex
           align-items: center
           justify-content: center
