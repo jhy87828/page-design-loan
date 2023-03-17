@@ -44,6 +44,8 @@ export default {
 
 <style scoped lang="sass">
 footer
+    position: relative
+    z-index: 50
     background: #ebebeb
     padding-inline: 3%
     padding-block: 4%

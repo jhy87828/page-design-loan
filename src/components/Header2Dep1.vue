@@ -51,9 +51,10 @@ export default {
       </p>
     </div>
     <div class="pc-menu">
-      <img src="../static/images/logo.png" />
+      <router-link to="/"> <img src="../static/images/logo.png" /></router-link>
+
       <ul>
-        <router-link class="router-link" to="/"
+        <router-link class="router-link" to="/gen"
           ><p>일반신용대출</p></router-link
         >
         <!-- <li>
@@ -68,10 +69,10 @@ export default {
             <li>로고</li>
           </ul>
         </li> -->
-        <router-link class="router-link" to="/foo"
+        <router-link class="router-link" to="/per"
           ><p>개인회생대출</p></router-link
         >
-        <router-link class="router-link" to="/"
+        <router-link class="router-link" to="/car"
           ><p>자동차 담보대출</p></router-link
         >
         <router-link class="router-link" to="/"
@@ -84,8 +85,6 @@ export default {
           ><p>저신용자대출</p></router-link
         >
       </ul>
-
-      <!-- <DropDownMenu /> -->
     </div>
   </header>
 </template>
