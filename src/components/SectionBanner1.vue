@@ -147,6 +147,13 @@ export default {
 };
 </script>
 <style scoped lang="sass">
+
+.tab
+  div
+    display: flex
+    div
+      width: 100px
+
 @font-face
     font-family: 'GyeonggiTitleM'
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff')

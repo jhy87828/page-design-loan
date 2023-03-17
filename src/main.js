@@ -1,5 +1,8 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+// 자동으로 만들어지는거였나???
 
-createApp(App).mount('#app')
+import { createApp } from "vue/dist/vue.esm-bundler.js";
+import "./style.css";
+import App from "./App.vue";
+import router from "./router";
+
+createApp(App).use(router).mount("#app");
