@@ -1,21 +1,17 @@
 <script>
-import Image1 from "../static/images/sub-people-1.png";
+import Image1 from "../static/images/sub-jump-1.png";
 import SectionSubInfo2 from "../components/SectionSubInfo2.vue";
 import Form1 from "../components/Form1.vue";
 
 export default {
-  name: "Personal",
-
+  name: "Estate",
   components: { SectionSubInfo2, Form1 },
   data: () => {
     return {
       image1: Image1,
-      items1: [
-        "만 20세 이상(소득증빙 확인서)",
-        "개인회생자, 파산면책자, 신용회복자",
-      ],
+      items1: ["만 20세 이상", "본인 명의 부동산소유고객"],
       items2: [
-        "한도 : 최소 100만원 ~ 최대 8,000만원(개인별 차등)",
+        "한도 : 최소 100만원 ~ 최대 2억원(개인별 차등)",
         "금리 : 최대 연 20% 이내",
         "기간 : 최소 1개월 ~ 최대 60개월",
       ],
@@ -31,14 +27,13 @@ export default {
 
 <template>
   <section>
-    <h2>파산면책자, 신용회복자도 가능</h2>
-    <h1>디자인론 개인회생대출!</h1>
-    <h3>개인회생자라면 미납회차, 기대출이 있어도 진행가능!</h3>
+    <h2>본인 명의 부동산소유자라면!</h2>
+    <h1>디자인론 부동산 담보대출</h1>
+    <h3>전, 월세 보증금 담보로도 대출가능!</h3>
     <img :src="image1" />
     <span
-      ><p style="color: #08959f">개인회생, 파산/신용회복자</p>
-
-      <p style="color: #f47500; font-size: 24px">모두 대출가능!</p></span
+      ><p style="color: #08959f">전월세 보증금 담보로도</p>
+      <p style="color: #f47500">대출가능!</p></span
     >
   </section>
   <SectionSubInfo2 :Items1="items1" :Items2="items2" :Items3="items3" />
@@ -78,14 +73,12 @@ section
     margin-block: 0
 
   img
-    width: 100%
+    width: 60%
     margin-block: 5%
     // padding-bottom: 50px
   span
     margin-top: 1%
     display: flex
-    flex-direction: column
-    align-items: center
     p
       font-weight: 600
       font-size: 18px

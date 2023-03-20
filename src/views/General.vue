@@ -1,16 +1,29 @@
 <script>
-import Image1 from "../static/images/sub-2.png";
 import Image2 from "../static/images/sub-people-5.png";
 
+import SectionSubInfo2 from "../components/SectionSubInfo2.vue";
 import Form1 from "../components/Form1.vue";
 
 export default {
   name: "General",
-  components: { Form1 },
+  components: { Form1, SectionSubInfo2 },
   data: () => {
     return {
-      image1: Image1,
       image2: Image2,
+      items1: [
+        "만 20세 이상(소득증빙 확인서)",
+        "직장인, 사업자, 프리랜서, 주부 등",
+      ],
+      items2: [
+        "한도 : 최소 100만원 ~ 최대 8,000만원(개인별 차등)",
+        "금리 : 최대 연 20% 이내",
+        "기간 : 최소 1개월 ~ 최대 60개월",
+      ],
+      items3: [
+        "원금일시상환 또는",
+        "원리금균등분할상환 등 (상품별 상이)",
+        "취급수수료 : X",
+      ],
     };
   },
 };
@@ -30,6 +43,7 @@ export default {
       ><p>전화 한통화로 무방문</p>
       <p>당일송금!</p></span
     >
+<<<<<<< Updated upstream
     <div>
       <div>
         <p>대상</p>
@@ -43,6 +57,11 @@ export default {
     </div>
     <Form1 />
   </section>
+=======
+  </section>
+  <SectionSubInfo2 :Items1="items1" :Items2="items2" :Items3="items3" />
+  <Form1 />
+>>>>>>> Stashed changes
 </template>
 
 <style scoped lang="sass">
@@ -59,10 +78,39 @@ section
   align-items: center
   justify-content: center
 
+<<<<<<< Updated upstream
   padding-block: 10%
+=======
+  margin-top: 5%
+  padding-block: 5%
+  h1
+    color: #08959f
+    font-weight: 700
+    font-size: 32px
+    margin-block: 2%
+  h2
+    color: #f47500
+    font-weight: 600
+    font-size: 18px
+    margin-block: 0
+  h3
+    color: #80b5b8
+    font-weight: 600
+    font-size: 18px
+    margin-block: 0
+
+>>>>>>> Stashed changes
   img
     width: 60%
     // padding-bottom: 50px
   span
     display: flex
+<<<<<<< Updated upstream
+=======
+    p
+      font-weight: 600
+      font-size: 18px
+      margin-right: 5px
+      margin-block: 1%
+>>>>>>> Stashed changes
 </style>
