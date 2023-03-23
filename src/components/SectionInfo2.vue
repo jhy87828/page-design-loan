@@ -12,8 +12,8 @@ export default {
 
 <template>
   <section>
-    <div>
-      <h1>디자인론과 함께하는 현명한 나의</h1>
+    <div style="background-color: #fff; padding-block: 2%">
+      <h1>디자인론과 함께하는</h1>
       <h1>채무통합대출</h1>
     </div>
 
@@ -59,10 +59,12 @@ export default {
 section
       background-color: #b6dde0
       width: inherit
-      height: 600px
+      height: auto
       display: flex
+      flex-direction: column
       justify-content: center
       border-bottom: none
+      padding-block: 20%
       p
         color: #4CABB4
         font-weight: 700
@@ -73,37 +75,28 @@ section
           position: absolute
           z-index: 0
 
-
-      background: #fff
-      display: flex
-      flex-direction: column
-      align-items: center
-      justify-content: center
-      z-index: 10
-      padding-inline: 5%
-      padding-block: 1%
-      margin-block: 1%
-      border-radius: 15px
       div
           display: flex
           flex-direction: column
           align-items: center
           justify-content: center
           h1
-              font-size: 24px
+              font-size: 36px
               font-weight: 800
-
-              text-shadow: 2px 2px 1px #b6dde0
-              color: #4CABB4
+              line-height: 1.2em
+              // text-shadow: 2px 2px 1px #08959f
+              color: #08959f
               margin-right: 7px
               margin-block: 0
 .sub-title
     display: flex
     flex-direction: column
-    color: #fff
-
     margin-block: 5%
-    font-size: 14px
+    p
+      font-size: 18px
+      font-weight: 700
+      color: #148c92
+      // text-shadow: 1px 1px 1px #597678
     span
       display: flex
       flex-direction: row
@@ -114,32 +107,39 @@ section
     flex-direction: column
 
     div
-        width: 200px
-        height: 100px
+        background-color: #fff
+        width: 80%
+        height: 100%
         display: flex
         flex-direction: column
 
         align-items: center
         justify-content: center
 
-        border: 2px solid #b6dde0
+        border: 2px dashed #e4eff0
         border-radius: 15px
+
         margin-block: 3%
+        padding-block: 5%
 
     .large
       font-size: 18px
       padding-bottom: 2%
+      color: #208186
     .small
-      font-size: 12px
+      font-size: 14px
 
 
 @media (min-width: 1024px)
   section
       background-color: #b6dde0
-      width: 100%
+      width: inherit
       height: auto
       display: flex
+      flex-direction: column
       justify-content: center
+      border-bottom: none
+      padding-block: 20%
       p
         color: #4CABB4
         font-weight: 700
@@ -151,46 +151,57 @@ section
           z-index: 0
 
       div
-          background: #fff
           display: flex
-          flex-direction: column
+          flex-direction: row
           align-items: center
           justify-content: center
-          z-index: 10
-          padding-inline: 5%
-          padding-block: 1%
-          margin-block: 1%
-          border-radius: 15px
-          span
-              display: flex
-              flex-direction: row
-              h1
-                  font-size: 46px
-                  font-weight: 800
-
-                  text-shadow: 2px 2px 1px #b6dde0
-                  color: #4CABB4
-                  margin-right: 7px
-                  margin-block: 0
+          h1
+              font-size: 63px
+              font-weight: 800
+              line-height: 1.2em
+              // text-shadow: 2px 2px 1px #08959f
+              color: #08959f
+              margin-right: 7px
+              margin-block: 0
   .sub-title
       display: flex
       flex-direction: column
-      margin-block: 2%
+      margin-block: 5%
+      p
+        font-size: 28px
+        font-weight: 700
+        color: #148c92
+        // text-shadow: 1px 1px 1px #597678
+      span
+        display: flex
+        flex-direction: row
+
 
   .detail
-      width: 100%
       display: flex
       flex-direction: row
+      justify-content: space-evenly
+
       div
-          height: 100%
+          background-color: #fff
+          width: 20%
+          height: 100px
           display: flex
           flex-direction: column
+
           align-items: center
-          justify-content: flex-start
-          border: none
+          justify-content: center
+
+          border: 2px dashed #e4eff0
+          border-radius: 15px
+
+          margin-block: 3%
+          padding-block: 5%
 
       .large
-        font-size: 20px
+        font-size: 28px
+        padding-bottom: 2%
+        color: #208186
       .small
-        font-size: 14px
+        font-size: 20px
 </style>

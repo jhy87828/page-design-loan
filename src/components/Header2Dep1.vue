@@ -48,7 +48,10 @@ export default {
 </script>
 
 <template>
-  <!-- <ul :class="{ side_menu_open: openSideMenu }" class="mobile-side-menu">
+  <ul
+    :class="{ side_menu_open: openSideMenu, side_menu_close: !openSideMenu }"
+    class="mobile-side-menu"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
@@ -75,7 +78,8 @@ export default {
     <router-link class="router-link" to="/credit"
       ><p>저신용자대출</p></router-link
     >
-  </ul> -->
+  </ul>
+
   <div class="headroom mobile" :class="{ 'headroom--unpinned': scrolled }">
     <div>
       <p>(주)오케이다이렉트대부중개 2016-서울강동-00074(대부중개업)</p>
@@ -178,14 +182,60 @@ header
         width: 25px
         height: 25px
 
+.mobile-side-menu
+    width: 30%
+    position: fixed
+    background-color: #08959f
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    top: 0
+    height: 100vh
+    z-index: 400
+    padding-top: 10%
+    padding-inline: 5%
+    margin: 0
+    animation: sliding 1s ease-out
+    svg
+      width: 30px
+      height: 30px
+    a
+      text-decoration: none
+      color: white
+      font-weight: 700
+      padding-inline: 2%
+      &:hover
+        color: #b6dde0
+
+.side_menu_close
+    animation: disappear 1s ease-out
+    right: -100%
 
 .side_menu_open
-    display: flex
+    animation: sliding 1s ease-out
+    right: 0
+
+
+@keyframes sliding
+  from
+    right: -100%
+    opacity: 0
+  to
+    right: 0
+    opacity: 1
+
+
+@keyframes disappear
+  from
+    right: 0
+    opacity: 1
+  to
+    right: -100%
+    opacity: 0
 
 
 @media screen and (min-width: 1024px)
-  .mobile-side-menu
-      display: none
+
   .mobile
       display: none
 

@@ -3,14 +3,12 @@
     <swiper
       :spaceBetween="30"
       :effect="'fade'"
-      :pagination="{
-        clickable: true,
-      }"
       :autoplay="{
-        delay: 100,
+        delay: 1000,
         disableOnInteraction: false,
       }"
       :loop="true"
+      :navigation="true"
       :modules="modules"
       class="mySwiper"
     >
@@ -132,13 +130,14 @@ import Icon6 from "../static/images/아이콘-6.png";
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
+// import required modules
+import { Navigation, EffectFade } from "swiper";
+
 // Import Swiper styles
 import "swiper/css";
 
-import "swiper/css/pagination";
-
-// import required modules
-import { Pagination } from "swiper";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 
 export default {
   components: {
@@ -147,7 +146,7 @@ export default {
   },
   setup() {
     return {
-      modules: [Pagination],
+      modules: [Navigation, EffectFade],
     };
   },
   data: () => {
@@ -197,6 +196,7 @@ p
 .swiper
     width: 100%
     .swiper-slide
+      background-color: white
       height: 300px !important
       padding-top: 60px
       display: flex

@@ -63,78 +63,112 @@ section
     align-items: center
     justify-content: center
     color: #08959f
-    padding-block: 5%
+    padding-block: 20%
     span
       display: flex
       h2
         padding: 0
-        margin-block: 0
-        margin-right: 3px
+        margin: 0
+        line-height: 0.7em
         font-size: 16px
     h1
       font-size: 28px
+      font-weight: 800
       padding: 0
-      margin: 0
+      margin: 2% 0 10% 0
     div
+      width: 100%
       display: flex
       flex-direction: column
+      align-items: center
       div
+        width: 60%
         display: flex
         flex-direction: column
         align-items: center
+        margin-block: 3%
+        border: 1px dashed #08959f
+        padding-inline: 20px
+        padding-block: 5%
         p
-          font-weight: 600
+
           padding: 0
           margin: 0
         img
-          width: 30px
-          height: 30px
+          width: 60px
+          height: 60px
+          margin-bottom: 5%
 
-@media (min-width: 1024px)
-    span
-        display: flex
-        h2
-            margin-right: 5px
-            font-size: 24px
-            margin-bottom: 1%
-    h1
-        font-size: 46px
-        font-weight: 800
-        margin-top: 0
-        margin-bottom: 3%
-        text-shadow: 2px 2px 1px #b6dde0
-
-    div
-        display: flex
-        flex-direction: row
-        div
-            width: 230px
-            padding-block: 2%
-            display: flex
-            flex-direction: column
-            align-items: center
-            justify-content: center
-            // border: 1px dashed #ebebeb
-            margin-inline: 10px
-            img
-              width: 30%
-            p
-                padding-inline: 3%
-                padding-block: 0
-
-            .small
+        .small
                 line-height: 1em
-                margin-top: 10%
+                margin-top: 1%
                 margin-bottom: 0
-                font-size: 18px
+                font-size: 14px
                 font-weight: 600
 
                 color: #47a9b3
-            .large
-                margin-top: 0
-                margin-bottom: 5%
-                font-weight: 700
-                font-size: 24px
+        .large
+            margin-top: 0
+            margin-bottom: 0
+            font-weight: 700
+            font-size: 16px
 
-                // color:
+@media (min-width: 1024px)
+  section
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      color: #08959f
+      padding-block: 20%
+      span
+          display: flex
+          h2
+              margin-right: 5px
+              font-size: 24px
+              margin-bottom: 1%
+      h1
+          font-size: 60px
+          font-weight: 800
+          margin-top: 0
+          margin-bottom: 3%
+          // text-shadow: 2px 2px 1px #b6dde0
+
+      div
+          width: 100%
+          display: flex
+          flex-direction: row
+          align-items: center
+          justify-content: center
+          div
+              width: 230px
+              padding-block: 2%
+              display: flex
+              flex-direction: column
+              align-items: center
+              justify-content: center
+              // border: 1px dashed #ebebeb
+              margin-inline: 10px
+              img
+                width: 30%
+              p
+                  padding-inline: 3%
+                  padding-block: 0
+
+              .small
+                  line-height: 1em
+                  margin-top: 10%
+                  margin-bottom: 0
+                  font-size: 18px
+                  font-weight: 600
+
+                  color: #47a9b3
+              .large
+                  margin-top: 0
+                  margin-bottom: 5%
+                  font-weight: 700
+                  font-size: 24px
+
+                  // color:
 </style>

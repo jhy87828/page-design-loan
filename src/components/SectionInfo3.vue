@@ -10,6 +10,7 @@ export default {
     return {
       image1: Image1,
       items1: [
+        { image: Image1, step: "step 01", detail: "대출상담 신청" },
         { image: Image2, step: "step 02", detail: "상담원 상담" },
         { image: Image3, step: "step 03", detail: "대출심사" },
         { image: Image4, step: "step 04", detail: "대출승인" },
@@ -28,19 +29,15 @@ export default {
       <h1>대출절차</h1>
     </div>
     <span class="process">
-      <div class="content">
-        <div><img style="margin-left: 13px" :src="image1" /></div>
-        <span>
-          <p class="step">step 01</p>
-          <p class="detail">대출상담 신청</p>
-        </span>
-      </div>
       <div v-for="(item, index) in items1" :key="index" class="content">
-        <div><img style="margin-left: 3px" :src="item.image" /></div>
         <span>
-          <p class="step">{{ item.step }}</p>
-          <p class="detail">{{ item.detail }}</p>
-        </span>
+          <div><img style="margin-left: 3px" :src="item.image" /></div>
+          <span>
+            <p class="step">{{ item.step }}</p>
+            <p class="detail">{{ item.detail }}</p>
+          </span></span
+        >
+        <p>></p>
       </div>
       <!-- <div>
         <div><img style="margin-left: 3px" :src="image3" /></div>
@@ -87,11 +84,11 @@ section
         justify-content: center
         .content
             display: flex
-            flex-direction: column
+            flex-direction: row
             align-items: center
-            justify-content: center
+            justify-content: space-between
             margin-inline: 5%
-            &::after
+            p
               display: none
             div
                 width: 80px
@@ -111,6 +108,9 @@ section
                 align-items: center
 
                 p
+                    display: block
+                    top: 0
+                    right: 0
                     padding: 0
                     line-height: 1.3em
                 .step
@@ -130,7 +130,7 @@ section
     align-items: center
     justify-content: center
     color: #333
-    padding-block: 2%
+    padding-block: 10%
     .title
         display: flex
         flex-direction: row
@@ -151,27 +151,15 @@ section
         margin-block: 1%
         .content
             display: flex
-            flex-direction: column
+            flex-direction: row
             align-items: center
             justify-content: center
             margin-inline: 3%
-            &:first-child
-              &::after
-                top: -65px
-                left: 80px
-            &:last-child
-              &::after
-                position: relative
-                top: -50px
-                left: 65px
-                content: ">"
-                color: white
-            &::after
+            p
+              display: block
               position: relative
-              top: -60px
-              left: 70px
-              font-weight: 600
-              content: ">"
+              top: 50px
+              right: -25px
             div
                 width: 80px
                 height: 80px
