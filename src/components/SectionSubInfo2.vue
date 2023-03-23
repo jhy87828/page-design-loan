@@ -69,15 +69,50 @@ section
             font-size: 20px
             font-weight: 700
             margin-bottom: 1%
-        p
-            font-size: 16px
-            margin-block: 0
         div
             border: none
             padding: 0
             margin: 0
             p
                 font-size: 14px
+                font-weight: 600
                 padding: 0
                 margin: 0
+
+@media (min-width: 1024px)
+  section
+      margin-block: 0
+      padding-top: 0 !important
+      display: flex
+      flex-direction: column
+      div
+          width: 70%
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: center
+          color: #208085
+          border: 1px dashed #c8c8c8
+          padding-inline: 5%
+          padding-block: 2%
+          margin-block: 3%
+          h2
+              color: #aaccc8
+              font-size: 42px
+              line-height: 0.1em
+              margin: 0
+              padding: 0
+          h3
+              font-size: 36px
+              font-weight: 700
+              margin-bottom: 1%
+          div
+              border: none
+              padding: 0
+              margin: 0
+              p
+                  font-size: 20px
+                  font-weight: 600
+                  padding: 0
+                  margin: 0
 </style>

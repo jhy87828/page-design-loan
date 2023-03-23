@@ -5,24 +5,6 @@ export default {
 </script>
 
 <template>
-<<<<<<< Updated upstream
-  <form>
-    <span>
-      <h3>신용도 영향없는</h3>
-      <h3>한도확인</h3></span
-    >
-    <div>
-      <span
-        ><p>성함</p>
-        <input type="text"
-      /></span>
-      <span
-        ><p>연락처</p>
-        <input type="text"
-      /></span>
-    </div>
-  </form>
-=======
   <section>
     <form>
       <span>
@@ -85,16 +67,12 @@ export default {
       <input type="button" value="상담신청하기" />
     </form>
   </section>
->>>>>>> Stashed changes
 </template>
 
 <style scoped lang="sass">
 section
     background-color: #e0eeed
 form
-<<<<<<< Updated upstream
-    border: 1px solid black
-=======
     background-color: white
     display: flex
     flex-direction: column
@@ -103,6 +81,9 @@ form
     padding-inline: 10%
     span
       display: flex
+      h3
+        font-size: 24px
+        font-weight: 700
     div
       background: white
 
@@ -111,6 +92,7 @@ form
         align-items: center
         justify-content: space-between
         p
+          font-size: 14px
           margin-right: 5px
 
         input[type="text"]
@@ -137,6 +119,7 @@ form
               font-size: 14px
               padding: 0
               margin: 0
+
     input[type="button"]
         background-color: #08959f
         color: white
@@ -145,5 +128,74 @@ form
         padding-inline: 20%
         margin-top: 10%
         margin-bottom: 5%
->>>>>>> Stashed changes
+        font-size: 14px
+        font-weight: 700
+        cursor: pointer
+        &:hover
+          background-color: #f47500
+
+@media (min-width: 1024px)
+  form
+      background-color: white
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding-block: 5%
+      padding-inline: 8%
+      span
+        display: flex
+        h3
+          font-size: 36px
+          font-weight: 700
+      div
+        background: white
+
+        span
+          display: flex
+          align-items: center
+          justify-content: space-between
+          p
+            font-size: 20px
+            color: #333
+            margin-right: 15px
+            font-weight: 700
+
+          input[type="text"]
+            width: 200px
+            height: 20px
+      section
+          div
+            display: flex
+            align-items: center
+            p
+              color: #333
+              font-size: 18px
+              font-weight: 700
+              padding: 0
+              margin:0
+
+            h3
+              font-size: 18px
+              font-weight: 500
+
+            span
+              display: flex
+              align-items: center
+              justify-content: center
+              padding-block: 1%
+              p
+                color: #333
+                font-weight: 700
+                font-size: 18px
+                padding: 0
+                margin: 0
+      input[type="button"]
+          background-color: #08959f
+          color: white
+          border: none
+          padding-block: 5%
+          padding-inline: 20%
+          margin-top: 10%
+          margin-bottom: 5%
+          font-size: 20px
 </style>

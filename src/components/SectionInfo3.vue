@@ -65,6 +65,71 @@ section
     align-items: center
     justify-content: center
     color: #333
+    padding-block: 30%
+
+    .title
+        display: flex
+        flex-direction: row
+        align-items: center
+        padding-inline: 1%
+        border-bottom: 1px solid #787878
+        margin-bottom: 10%
+        h1
+            margin-right: 5px
+            font-weight: 400
+            margin-block: 10px
+    .process
+        width: 100%
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        .content
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            margin-inline: 5%
+            &::after
+              display: none
+            div
+                width: 80px
+                height: 80px
+                display: flex
+                align-items: center
+                justify-content: center
+                border: 1px solid #787878
+                border-radius: 70%
+                padding: 10%
+                img
+                    width: 40px
+                    height: 40px
+            span
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                p
+                    padding: 0
+                    line-height: 1.3em
+                .step
+                    margin-top: 15%
+                    margin-bottom: 0
+                    font-size: 15px
+                    font-weight: 600
+                .detail
+                    margin-top: 1%
+                    font-size: 20px
+                    font-weight: 400
+
+@media (min-width: 1024px)
+  section
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    color: #333
     padding-block: 2%
     .title
         display: flex
@@ -80,8 +145,10 @@ section
     .process
         width: 100%
         display: flex
+        flex-direction: row
         align-items: center
         justify-content: center
+        margin-block: 1%
         .content
             display: flex
             flex-direction: column

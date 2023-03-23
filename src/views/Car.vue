@@ -51,9 +51,8 @@ export default {
 </template>
 
 <style scoped lang="sass">
-section
-  // background-image: url('../static/images/background-2.png')
 
+section
   background-size: cover
   background-repeat: no-repeat
   background-position: center
@@ -82,16 +81,59 @@ section
     font-size: 18px
     margin-block: 0
 
+
   img
-    width: 60%
-    margin-block: 5%
-    // padding-bottom: 50px
+    width: 100%
+    margin-bottom: 15%
   span
-    margin-top: 1%
     display: flex
     p
+      color: #08959f
       font-weight: 600
       font-size: 18px
       margin-right: 5px
       margin-block: 1%
+
+@media (min-width: 1024px)
+  section
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    height: inherit
+
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    margin-top: 5%
+    padding-block: 5%
+    h1
+      color: #08959f
+      font-weight: 700
+      font-size: 67px
+      margin-block: 2%
+    h2
+      color: #f47500
+      font-weight: 700
+      font-size: 32px
+      margin-block: 0
+    h3
+      color: #80b5b8
+      font-weight: 700
+      font-size: 32px
+      margin-block: 0
+
+
+    img
+      width: 60%
+      margin-bottom: 5%
+    span
+      display: flex
+      p
+        color: #08959f
+        font-weight: 700
+        font-size: 32px
+        margin-right: 5px
+        margin-block: 0
 </style>

@@ -38,7 +38,7 @@ export default {
     <span
       ><p style="color: #08959f">개인회생, 파산/신용회복자</p>
 
-      <p style="color: #f47500; font-size: 24px">모두 대출가능!</p></span
+      <p style="color: #f47500">모두 대출가능!</p></span
     >
   </section>
   <SectionSubInfo2 :Items1="items1" :Items2="items2" :Items3="items3" />
@@ -47,8 +47,6 @@ export default {
 
 <style scoped lang="sass">
 section
-  // background-image: url('../static/images/background-2.png')
-
   background-size: cover
   background-repeat: no-repeat
   background-position: center
@@ -63,7 +61,7 @@ section
   padding-block: 5%
   h1
     color: #08959f
-    font-weight: 700
+    font-weight: 600
     font-size: 32px
     margin-block: 2%
   h2
@@ -77,18 +75,59 @@ section
     font-size: 18px
     margin-block: 0
 
+
   img
     width: 100%
-    margin-block: 5%
-    // padding-bottom: 50px
+    margin-bottom: 15%
   span
-    margin-top: 1%
     display: flex
-    flex-direction: column
-    align-items: center
     p
+      color: #08959f
       font-weight: 600
       font-size: 18px
       margin-right: 5px
       margin-block: 1%
+
+@media (min-width: 1024px)
+  section
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    height: inherit
+
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    margin-top: 5%
+    padding-block: 5%
+    h1
+      color: #08959f
+      font-weight: 700
+      font-size: 67px
+      margin-block: 2%
+    h2
+      color: #f47500
+      font-weight: 700
+      font-size: 32px
+      margin-block: 0
+    h3
+      color: #80b5b8
+      font-weight: 700
+      font-size: 32px
+      margin-block: 0
+
+
+    img
+      width: 60%
+      margin-bottom: 5%
+    span
+      display: flex
+      p
+        color: #08959f
+        font-weight: 700
+        font-size: 32px
+        margin-right: 5px
+        margin-block: 0
 </style>

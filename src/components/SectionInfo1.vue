@@ -57,19 +57,40 @@ export default {
 
 <style scoped lang="sass">
 section
+    width: 100%
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
-    border-top: 1px dashed #c8c8c8
-    border-bottom: 1px dashed #c8c8c8
-
-    padding-block: 5%
-    padding-bottom: 10%
-    margin-block: 4%
-
     color: #08959f
+    padding-block: 5%
+    span
+      display: flex
+      h2
+        padding: 0
+        margin-block: 0
+        margin-right: 3px
+        font-size: 16px
+    h1
+      font-size: 28px
+      padding: 0
+      margin: 0
+    div
+      display: flex
+      flex-direction: column
+      div
+        display: flex
+        flex-direction: column
+        align-items: center
+        p
+          font-weight: 600
+          padding: 0
+          margin: 0
+        img
+          width: 30px
+          height: 30px
 
+@media (min-width: 1024px)
     span
         display: flex
         h2
@@ -81,6 +102,8 @@ section
         font-weight: 800
         margin-top: 0
         margin-bottom: 3%
+        text-shadow: 2px 2px 1px #b6dde0
+
     div
         display: flex
         flex-direction: row
@@ -91,7 +114,7 @@ section
             flex-direction: column
             align-items: center
             justify-content: center
-            border: 1px dashed #ebebeb
+            // border: 1px dashed #ebebeb
             margin-inline: 10px
             img
               width: 30%

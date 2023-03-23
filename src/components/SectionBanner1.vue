@@ -55,6 +55,26 @@
           <img :src="image4" />
         </div>
       </swiper-slide>
+      <swiper-slide>
+        <div class="detail">
+          <p class="detail-title">부동산 담보 대출</p>
+          <p>본인명의의 부동산 소유자라면!</p>
+          <p>전,월세 보증금 담보로도 대출가능!</p>
+        </div>
+        <div class="content">
+          <img :src="image4" />
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="detail">
+          <p class="detail-title">부동산 담보 대출</p>
+          <p>본인명의의 부동산 소유자라면!</p>
+          <p>전,월세 보증금 담보로도 대출가능!</p>
+        </div>
+        <div class="content">
+          <img :src="image4" />
+        </div>
+      </swiper-slide>
     </swiper>
 
     <div class="icons">
@@ -148,17 +168,19 @@ export default {
 </script>
 <style scoped lang="sass">
 
+@font-face
+    font-family: 'GyeonggiTitleM'
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
 .tab
   div
     display: flex
     div
       width: 100px
 
-@font-face
-    font-family: 'GyeonggiTitleM'
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff')
-    font-weight: normal
-    font-style: normal
+
 section
   display: flex
   flex-direction: column
@@ -187,7 +209,6 @@ p
         width: 500px
 .icons
     width: 100%
-    background: #E3F2F3
     display: flex
     align-items: center
     justify-content: center
@@ -258,21 +279,17 @@ p
           width: 600px
   .icons
       width: 100%
-      background: #E3F2F3
       display: flex
       align-items: center
       justify-content: center
       padding-block: 1%
+
       div
         display: flex
         flex-direction: column
         align-items: center
         margin-inline: 2%
         margin-block: 2%
-        // img
-        //   width: 35px
-        //   height: 35px
-        //   margin-bottom: 20px
         p
           padding: 0
           margin: 0
