@@ -20,6 +20,7 @@ export default {
   >
     <section>
       <div><button @click="check()">x</button></div>
+
       <h1>개인(신용)정보수집,이용동의서</h1>
       <p>
         주식회사 상상대부중개 귀중 귀사와의 (금융)거래와 관련하여 귀사가 본인의
@@ -114,9 +115,10 @@ export default {
 <style scoped lang="sass">
 .pop-up
   background-color: transparent
-  position: absolute
+  position: sticky
+  top: 10%
   width: 100%
-  height: auto
+  height: 70vh
   z-index: 800
   // border: 5px solid #06777f
   padding-inline: 2%
@@ -126,14 +128,21 @@ export default {
   section
     background-color: white
     width: 80%
-    border: 1px solid #06777f
+    border: 2px solid #06777f
     padding: 2%
+    overflow: scroll
     div
       width: 100%
       display: flex
+      flex-direction: column
       justify-content: flex-end
+      align-items: center
+
       button
-        background: transparent
+        background-color: white
+        position: absolute
+        top: 5%
+        right: 15%
         border: 2px solid #06777f
         border-radius: 5px
         color: #06777f
