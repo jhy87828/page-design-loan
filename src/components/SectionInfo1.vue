@@ -111,7 +111,7 @@ section
             margin-top: 0
             margin-bottom: 0
             font-weight: 700
-            font-size: 16px
+            font-size: 15px
 
 @media (min-width: 1024px)
   section
@@ -168,7 +168,7 @@ section
                   margin-top: 0
                   margin-bottom: 5%
                   font-weight: 700
-                  font-size: 24px
+                  font-size: 20px
 
                   // color:
 </style>
