@@ -14,34 +14,29 @@
     >
       <swiper-slide>
         <div class="detail">
+          <p class="detail-title">일반 신용 대출</p>
+          <p>복잡한 절차없는 상상론 일반신용대출!</p>
+          <p>직장인, 사업자, 주부라면 복잡한 절차없이!</p>
+        </div>
+        <img :src="image1" />
+      </swiper-slide>
+      <swiper-slide>
+        <div class="detail">
           <p class="detail-title">개인 회생 대출</p>
           <p>개인회생자라면 미납회차,</p>
           <p>기대출이 있어도 진행가능!</p>
           <p>파산면책자, 신용회복자도 대출 가능!</p>
         </div>
-        <div class="content">
-          <img :src="image1" />
-        </div>
+        <img style="width: 440px; height: 400px" :src="image2" />
       </swiper-slide>
-      <swiper-slide>
-        <div class="detail">
-          <p class="detail-title">일반 신용 대출</p>
-          <p>복잡한 절차없는 상상론 일반신용대출!</p>
-          <p>직장인, 사업자, 주부라면 복잡한 절차없이!</p>
-        </div>
-        <div class="content">
-          <img :src="image2" />
-        </div>
-      </swiper-slide>
+
       <swiper-slide>
         <div class="detail">
           <p class="detail-title">자동차 담보 대출</p>
           <p>무입고 무방문!</p>
           <p>타던차 그대로 시세 100% 대출 가능!</p>
         </div>
-        <div class="content">
-          <img :src="image3" />
-        </div>
+        <img style="width: 400px; height: 390px" :src="image3" />
       </swiper-slide>
       <swiper-slide>
         <div class="detail">
@@ -49,29 +44,26 @@
           <p>본인명의의 부동산 소유자라면!</p>
           <p>전,월세 보증금 담보로도 대출가능!</p>
         </div>
-        <div class="content">
-          <img :src="image4" />
-        </div>
+        <img
+          style="width: 400px; height: 330px; margin-left: 3%"
+          :src="image4"
+        />
       </swiper-slide>
       <swiper-slide>
         <div class="detail">
-          <p class="detail-title">부동산 담보 대출</p>
+          <p class="detail-title">전월세 신용 대출</p>
           <p>본인명의의 부동산 소유자라면!</p>
           <p>전,월세 보증금 담보로도 대출가능!</p>
         </div>
-        <div class="content">
-          <img :src="image4" />
-        </div>
+        <img :src="image5" />
       </swiper-slide>
       <swiper-slide>
         <div class="detail">
-          <p class="detail-title">부동산 담보 대출</p>
+          <p class="detail-title">저신용자 대출</p>
           <p>본인명의의 부동산 소유자라면!</p>
           <p>전,월세 보증금 담보로도 대출가능!</p>
         </div>
-        <div class="content">
-          <img :src="image4" />
-        </div>
+        <img style="width: 400px; height: 390px" :src="image6" />
       </swiper-slide>
     </swiper>
 
@@ -110,10 +102,12 @@
   </section>
 </template>
 <script>
-import Image1 from "../static/images/slide_01.png";
-import Image2 from "../static/images/slide_02.png";
-import Image3 from "../static/images/slide_03.png";
-import Image4 from "../static/images/slide_04.png";
+import Image1 from "../static/images/de-ref-1.png";
+import Image2 from "../static/images/de-ref-2.png";
+import Image3 from "../static/images/de-ref-3.png";
+import Image4 from "../static/images/de-ref-4.png";
+import image5 from "../static/images/de-ref-5.png";
+import Image6 from "../static/images/de-ref-6.png";
 // import Icon1 from "../static/images/디자인론_이미지-아이콘_09.png";
 // import Icon2 from "../static/images/디자인론_이미지-아이콘_15.png";
 // import Icon3 from "../static/images/디자인론_이미지-아이콘_07.png";
@@ -155,6 +149,8 @@ export default {
       image2: Image2,
       image3: Image3,
       image4: Image4,
+      image5: image5,
+      image6: Image6,
       icon1: Icon1,
       icon2: Icon2,
       icon3: Icon3,
@@ -197,23 +193,32 @@ p
     width: 100%
     .swiper-slide
       background-color: white
-      height: 300px !important
-      padding-top: 60px
+      height: 430px !important
       display: flex
-      flex-direction: row
+      flex-direction: column
       align-items: center
+      padding-top: 60px
+      .detail-title
+        font-size: 32px
+        font-weight: 700
+      p
+        color: #08959f
+      img
+          width: 100%
+          height: auto
+          margin-left: 0
+          margin-right: 0
+          margin-block: 0
 
-.content
-    position: relative
-    img
-        width: 500px
 .icons
     width: 100%
     display: flex
+    flex-wrap: wrap
     align-items: center
     justify-content: center
-    padding-block: 1%
+    padding-block: 10%
     div
+      width: 34%
       display: flex
       flex-direction: column
       align-items: center
@@ -250,33 +255,17 @@ p
         justify-content: center
         padding-bottom: 8%
         margin-block: 1%
-
-
-  .detail
-    display: flex
-    flex-direction: column
-    height: 100%
-    justify-content: center
-    color: #333
-    .detail-title
-      font-size: 32px
-
-      display: flex
-      align-items: flex-start
-      justify-content: flex-start
-      font-family: 'GyeonggiTitleM'
-      margin-bottom: 10px
-
-  .content
-      position: relative
-      z-index: 10
-      p
-          position: absolute
-          left: 130px
+        .detail-title
           font-size: 32px
-          font-weight: 800
-      img
-          width: 600px
+          font-weight: 700
+        p
+          color: #08959f
+        img
+            width: 520px
+            height: 400px
+            margin-left: 1%
+
+
   .icons
       width: 100%
       display: flex
@@ -285,11 +274,13 @@ p
       padding-block: 1%
 
       div
+        width: 10%
         display: flex
         flex-direction: column
         align-items: center
         margin-inline: 2%
-        margin-block: 2%
+        margin-top: 1%
+        margin-bottom: 3%
         p
           padding: 0
           margin: 0
