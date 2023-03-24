@@ -32,12 +32,16 @@ export default {
           <input type="text"
         /></span>
       </div>
+
       <section>
         <div>
-          <h3>이용약관보기</h3>
+          <h3 style="padding: 0; margin: 0">이용약관동의</h3>
+        </div>
+
+        <div>
           <span>
-            <input />
             <p>동의(광고성 정보동의 포함)</p>
+            <input type="radio" />
           </span>
         </div>
 
@@ -90,6 +94,7 @@ form
     align-items: center
     padding-block: 5%
     padding-inline: 10%
+
     span
       display: flex
       h3
