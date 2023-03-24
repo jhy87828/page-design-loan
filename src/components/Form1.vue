@@ -1,6 +1,17 @@
 <script>
 export default {
   name: "Form1",
+  data() {
+    return {
+      popUP: false,
+    };
+  },
+  methods: {
+    check(e) {
+      this.popUP = !this.popUP;
+      console.log("checked");
+    },
+  },
 };
 </script>
 
@@ -25,7 +36,7 @@ export default {
         <div>
           <h3>이용약관보기</h3>
           <span>
-            <input type="checkbox" />
+            <input />
             <p>동의(광고성 정보동의 포함)</p>
           </span>
         </div>
