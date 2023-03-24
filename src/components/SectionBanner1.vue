@@ -27,7 +27,7 @@
           <p>기대출이 있어도 진행가능!</p>
           <p>파산면책자, 신용회복자도 대출 가능!</p>
         </div>
-        <img style="width: 440px; height: 400px" :src="image2" />
+        <img :src="image2" />
       </swiper-slide>
 
       <swiper-slide>
@@ -36,7 +36,7 @@
           <p>무입고 무방문!</p>
           <p>타던차 그대로 시세 100% 대출 가능!</p>
         </div>
-        <img style="width: 400px; height: 390px" :src="image3" />
+        <img :src="image3" />
       </swiper-slide>
       <swiper-slide>
         <div class="detail">
@@ -44,10 +44,7 @@
           <p>본인명의의 부동산 소유자라면!</p>
           <p>전,월세 보증금 담보로도 대출가능!</p>
         </div>
-        <img
-          style="width: 400px; height: 330px; margin-left: 3%"
-          :src="image4"
-        />
+        <img :src="image4" />
       </swiper-slide>
       <swiper-slide>
         <div class="detail">
@@ -63,7 +60,7 @@
           <p>본인명의의 부동산 소유자라면!</p>
           <p>전,월세 보증금 담보로도 대출가능!</p>
         </div>
-        <img style="width: 400px; height: 390px" :src="image6" />
+        <img :src="image6" />
       </swiper-slide>
     </swiper>
 
@@ -197,10 +194,11 @@ p
       display: flex
       flex-direction: column
       align-items: center
-      padding-top: 60px
+      // padding-top: 60px
       .detail-title
         font-size: 32px
         font-weight: 700
+        margin-top: 10%
       p
         color: #08959f
       img
@@ -253,8 +251,7 @@ p
         flex-direction: row
         align-items: center
         justify-content: center
-        padding-bottom: 8%
-        margin-block: 1%
+        // margin-block: 1%
         .detail-title
           font-size: 32px
           font-weight: 700

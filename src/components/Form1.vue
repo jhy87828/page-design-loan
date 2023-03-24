@@ -3,13 +3,12 @@ export default {
   name: "Form1",
   data() {
     return {
-      popUP: false,
+      popup: false,
     };
   },
   methods: {
-    check(e) {
-      this.popUP = !this.popUP;
-      console.log("checked");
+    check() {
+      this.popup = !this.popup;
     },
   },
 };
