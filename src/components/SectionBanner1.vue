@@ -97,36 +97,36 @@
     </swiper>
 
     <div class="icons">
-      <div>
+      <router-link to="gen">
         <img :src="icon1" />
         <p class="small">복잡한 절차없는</p>
         <p class="large">일반신용대출</p>
-      </div>
-      <div>
+      </router-link>
+      <router-link to="per">
         <img :src="icon2" />
         <p class="small">파산 회복자도 가능한</p>
         <p class="large">개인회생대출</p>
-      </div>
-      <div>
+      </router-link>
+      <router-link to="car">
         <img :src="icon3" />
         <p class="small">무입고! 무방문!</p>
         <p class="large">자동차 담보대출</p>
-      </div>
-      <div>
+      </router-link>
+      <router-link to="estate">
         <img :src="icon4" />
         <p class="small">선순위부터 후순위까지!</p>
         <p class="large">부동산 담보대출</p>
-      </div>
-      <div>
+      </router-link>
+      <router-link to="rent">
         <img :src="icon5" />
         <p class="small">무설정,무담보로</p>
         <p class="large">전월세 신용대출</p>
-      </div>
-      <div>
+      </router-link>
+      <router-link to="credit">
         <img :src="icon6" />
         <p class="small">연체만 없다면</p>
         <p class="large">저신용자대출</p>
-      </div>
+      </router-link>
     </div>
   </section>
 </template>
@@ -247,7 +247,8 @@ p
     align-items: center
     justify-content: center
     padding-block: 10%
-    div
+    a
+      text-decoration: none
       width: 34%
       display: flex
       flex-direction: column
@@ -302,7 +303,8 @@ p
       justify-content: center
       padding-block: 1%
 
-      div
+      a
+        text-decoration: none
         width: 10%
         display: flex
         flex-direction: column
