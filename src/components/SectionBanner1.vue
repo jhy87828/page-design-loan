@@ -18,15 +18,7 @@
           <p>복잡한 절차없는 상상론 일반신용대출!</p>
           <p>직장인, 사업자, 주부라면 복잡한 절차없이!</p>
         </div>
-        <img
-          :src="image1"
-          style="
-            width: 520px;
-            height: auto;
-            margin-left: 1%;
-            margin-bottom: 20px;
-          "
-        />
+        <img :src="image1" style="width: 120%; margin-top: -20%" />
       </swiper-slide>
       <swiper-slide>
         <div class="detail">
@@ -35,15 +27,7 @@
           <p>기대출이 있어도 진행가능!</p>
           <p>파산면책자, 신용회복자도 대출 가능!</p>
         </div>
-        <img
-          :src="image2"
-          style="
-            width: 450px;
-            height: auto;
-            margin-left: 5%;
-            margin-bottom: 0px;
-          "
-        />
+        <img :src="image2" style="width: 100%; margin-top: -10%" />
       </swiper-slide>
 
       <swiper-slide>
@@ -52,15 +36,7 @@
           <p>무입고 무방문!</p>
           <p>타던차 그대로 시세 100% 대출 가능!</p>
         </div>
-        <img
-          :src="image3"
-          style="
-            width: 400px;
-            height: auto;
-            margin-left: 5%;
-            margin-bottom: 50px;
-          "
-        />
+        <img :src="image3" style="width: 70%" />
       </swiper-slide>
       <swiper-slide>
         <div class="detail">
@@ -68,15 +44,7 @@
           <p>본인명의의 부동산 소유자라면!</p>
           <p>전,월세 보증금 담보로도 대출가능!</p>
         </div>
-        <img
-          :src="image4"
-          style="
-            width: 520px;
-            height: auto;
-            margin-left: 5%;
-            margin-block: 30px;
-          "
-        />
+        <img :src="image4" style="width: 80%; margin-top: 20%" />
       </swiper-slide>
       <swiper-slide>
         <div class="detail">
@@ -84,7 +52,7 @@
           <p>본인명의의 부동산 소유자라면!</p>
           <p>전,월세 보증금 담보로도 대출가능!</p>
         </div>
-        <img :src="image5" />
+        <img :src="image5" style="width: 110%; margin-top: -2%" />
       </swiper-slide>
       <swiper-slide>
         <div class="detail">
@@ -92,7 +60,7 @@
           <p>본인명의의 부동산 소유자라면!</p>
           <p>전,월세 보증금 담보로도 대출가능!</p>
         </div>
-        <img :src="image6" style="width: 400px" />
+        <img :src="image6" style="width: 100%; margin-top: -10%" />
       </swiper-slide>
     </swiper>
 
@@ -221,24 +189,32 @@ p
 .swiper
     width: 100%
     .swiper-slide
+
       background-color: white
       height: 430px !important
       display: flex
       flex-direction: column
       align-items: center
       // padding-top: 60px
+
+      .detail
+        position: relative
+        z-index: 10
+        // padding-top: 10%
       .detail-title
-        font-size: 32px
+        font-size: 28px
         font-weight: 700
         margin-top: 10%
       p
+        font-size: 15px
         color: #08959f
       img
-          width: 100%
-          height: auto
+          position: relative
+
           margin-left: 0
           margin-right: 0
           margin-block: 0
+          z-index: 0
 
 .icons
     width: 100%
@@ -268,56 +244,56 @@ p
       .large
         font-size: 15px
 
-@media screen and (min-width: 1024px)
+// @media screen and (min-width: 1024px)
 
-  p
-    margin-block: 0
-    padding: 0
-    line-height: 1.5em
-    font-size: 16px
-    color: #4f4f4f
-  .swiper
-      margin-inline: 0
-      .swiper-slide
-        height: auto
-        display: flex
-        flex-direction: row
-        align-items: center
-        justify-content: center
-        // margin-block: 1%
-        .detail-title
-          font-size: 32px
-          font-weight: 700
-        p
-          color: #08959f
-        img
-            width: 520px
-            height: 400px
-            margin-left: 1%
+//   p
+//     margin-block: 0
+//     padding: 0
+//     line-height: 1.5em
+//     font-size: 16px
+//     color: #4f4f4f
+//   .swiper
+//       margin-inline: 0
+//       .swiper-slide
+//         height: auto
+//         display: flex
+//         flex-direction: row
+//         align-items: center
+//         justify-content: center
+//         // margin-block: 1%
+//         .detail-title
+//           font-size: 32px
+//           font-weight: 700
+//         p
+//           color: #08959f
+//         img
+//             width: 520px
+//             height: 400px
+//             margin-left: 1%
 
 
-  .icons
-      width: 100%
-      display: flex
-      align-items: center
-      justify-content: center
-      padding-block: 1%
+//   .icons
+//       width: 100%
+//       display: flex
+//       align-items: center
+//       justify-content: center
+//       padding-block: 1%
 
-      a
-        text-decoration: none
-        width: 10%
-        display: flex
-        flex-direction: column
-        align-items: center
-        margin-inline: 2%
-        margin-top: 1%
-        margin-bottom: 3%
-        p
-          padding: 0
-          margin: 0
-          line-height: 1.2em
-        .small
-          font-size: 12px
-        .large
-          font-size: 15px
+//       a
+//         text-decoration: none
+//         width: 10%
+//         display: flex
+//         flex-direction: column
+//         align-items: center
+//         margin-inline: 2%
+//         margin-top: 1%
+//         margin-bottom: 3%
+//         p
+//           padding: 0
+//           margin: 0
+//           line-height: 1.2em
+//         .small
+//           font-size: 12px
+//         .large
+//           font-size: 15px
 </style>
