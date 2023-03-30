@@ -18,7 +18,15 @@
           <p>복잡한 절차없는 상상론 일반신용대출!</p>
           <p>직장인, 사업자, 주부라면 복잡한 절차없이!</p>
         </div>
-        <img :src="image1" />
+        <img
+          :src="image1"
+          style="
+            width: 520px;
+            height: auto;
+            margin-left: 1%;
+            margin-bottom: 20px;
+          "
+        />
       </swiper-slide>
       <swiper-slide>
         <div class="detail">
@@ -27,7 +35,15 @@
           <p>기대출이 있어도 진행가능!</p>
           <p>파산면책자, 신용회복자도 대출 가능!</p>
         </div>
-        <img :src="image2" />
+        <img
+          :src="image2"
+          style="
+            width: 450px;
+            height: auto;
+            margin-left: 5%;
+            margin-bottom: 0px;
+          "
+        />
       </swiper-slide>
 
       <swiper-slide>
@@ -36,7 +52,15 @@
           <p>무입고 무방문!</p>
           <p>타던차 그대로 시세 100% 대출 가능!</p>
         </div>
-        <img :src="image3" />
+        <img
+          :src="image3"
+          style="
+            width: 400px;
+            height: auto;
+            margin-left: 5%;
+            margin-bottom: 50px;
+          "
+        />
       </swiper-slide>
       <swiper-slide>
         <div class="detail">
@@ -44,7 +68,15 @@
           <p>본인명의의 부동산 소유자라면!</p>
           <p>전,월세 보증금 담보로도 대출가능!</p>
         </div>
-        <img :src="image4" />
+        <img
+          :src="image4"
+          style="
+            width: 520px;
+            height: auto;
+            margin-left: 5%;
+            margin-block: 30px;
+          "
+        />
       </swiper-slide>
       <swiper-slide>
         <div class="detail">
@@ -60,7 +92,7 @@
           <p>본인명의의 부동산 소유자라면!</p>
           <p>전,월세 보증금 담보로도 대출가능!</p>
         </div>
-        <img :src="image6" />
+        <img :src="image6" style="width: 400px" />
       </swiper-slide>
     </swiper>
 
@@ -116,7 +148,7 @@ import Icon2 from "../static/images/아이콘-2.png";
 import Icon3 from "../static/images/아이콘-4.png";
 import Icon4 from "../static/images/아이콘-1.png";
 import Icon5 from "../static/images/아이콘-5.png";
-import Icon6 from "../static/images/아이콘-6.png";
+import Icon6 from "../static/images/아이콘-6-1.png";
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
